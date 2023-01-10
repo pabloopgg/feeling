@@ -71,18 +71,6 @@
   </head>
 
   <body>
-
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-
     <div
       id="spinner"
       class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
@@ -104,7 +92,7 @@
             <small>comercial@feelingholding.com.br</small>
           </div>
         </div>
-        <!-- <div class="col-lg-5 px-5 text-end"> 
+        <div class="col-lg-5 px-5 text-end">
           <div class="h-100 d-inline-flex align-items-center">
             <a class="text-white-50 ms-4" href=""
               ><i class="fab fa-facebook-f"></i
@@ -119,7 +107,7 @@
               ><i class="fab fa-instagram"></i
             ></a>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
     
@@ -146,55 +134,113 @@
           <a href="index.html" class="nav-item nav-link">Home</a>
           <a href="about.html" class="nav-item nav-link">Sobre</a>
           <a href="mapas.html" class="nav-item nav-link">Mapa</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown">Programas</a>
-            <div class="dropdown-menu bg-light border-0 m-0">
-              <a href="labs.html" class="dropdown-item">Laboratórios</a>
-              <a href="projs.html" class="dropdown-item">Proj. Pedagógicos</a>
-            </div>
-          </div>
+          <a href="service.html" class="nav-item nav-link">Programas</a>
           <a href="contact.html" class="nav-item nav-link active">Contato</a>
         </div>
       </div>
+      <a href="https://coopedu.com.br/" class="btn btn-primary px-3 d-none d-lg-block" style="border-color: #F58634; background-color: #F58634;" target="_blank">Site externo</a>
     </nav>
 
-    <div>
-      <div>
-        <h1 class="display-6 mb-4 mt-5" style="display: flex; justify-content: center;">
-          Ainda com dúvidas?
-        </h1>  
-          <div data-wow-delay="0.1s">
-            <p class="mb-4">
-            </p>            
-            <div class="row g-3 mb-5">
-              <div class="col-12" style="display: flex; justify-content: center;">
-                <a class="btn btn-primary py-3 px-5 mx-1" href="mailto:comercial@feelingholding.com.br?subject=Dúvida">Enviar E-mail</a>
-                <a class="btn btn-primary py-3 px-5 mx-1" href="mailto:comercial@feelingholding.com.br?subject=Dúvida">Enviar Mensagem</a>
-              </div>
-              
-            </div>
-          </div>
+    <div
+      class="container-fluid page-header py-5 mb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <h1 class="display-4 animated slideInDown mb-4">Entre em contato conosco!</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb mb-0">
+          </ol>
+        </nav>
       </div>
     </div>
-    <div class="position-relative rounded overflow-hidden h-100 mx-5 mb-5">
-      <iframe
-        class="position-relative w-100 h-100 "
-        style="min-height: 400px"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.0136502887613!2d-35.213870549560056!3d-5.853698959286028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff617c366c33%3A0xbd682b5a1af3e862!2sAv.%20D%C3%A3o%20Silveira%2C%203860%20-%20loja%203%20-%20Candel%C3%A1ria%2C%20Natal%20-%20RN%2C%2059080-560!5e0!3m2!1sen!2sbr!4v1667267808152!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        frameborder="0"
-        style="min-height: 400px; border: 2"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe>
+
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <h1 class="display-6 mb-5">
+              Nos envie sua dúvida ou venha nos encontrar!
+            </h1>
+            <p class="mb-4">
+            </p>
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                    />
+                    <label for="name">Seu nome</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your Email"
+                    />
+                    <label for="email">Seu E-mail</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Subject"
+                    />
+                    <label for="subject">Título</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a message here"
+                      id="message"
+                      style="height: 100px"
+                    ></textarea>
+                    <label for="message">Menssagem</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary py-3 px-5" type="submit">
+                    Enviar mensagem
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div
+            class="col-lg-6 wow fadeIn"
+            data-wow-delay="0.5s"
+            style="min-height: 450px"
+          >
+            <div class="position-relative rounded overflow-hidden h-100">
+              <iframe
+                class="position-relative w-100 h-100"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.0136502887613!2d-35.213870549560056!3d-5.853698959286028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff617c366c33%3A0xbd682b5a1af3e862!2sAv.%20D%C3%A3o%20Silveira%2C%203860%20-%20loja%203%20-%20Candel%C3%A1ria%2C%20Natal%20-%20RN%2C%2059080-560!5e0!3m2!1sen!2sbr!4v1667267808152!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                frameborder="0"
+                style="min-height: 450px; border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Contact End -->
 
     <div
-      class="container-fluid bg-dark footer wow fadeIn"
+      class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
       data-wow-delay="0.1s"
     >
       <div class="container py-5">
@@ -207,10 +253,10 @@
                 alt=""
               />
             </h1>
-            <!--<p style="color:rgba(255, 255, 255, 0.9)"> 
+            <p style="color:rgba(255, 255, 255, 0.9)"> 
               Nossas redes sociais
             </p>
-             <div class="d-flex pt-2">
+            <div class="d-flex pt-2">
               <a class="btn btn-square me-1" href=""
                 ><i class="fab fa-twitter"></i
               ></a>
@@ -223,7 +269,7 @@
               <a class="btn btn-square me-0" href=""
                 ><i class="fab fa-linkedin-in"></i
               ></a>
-            </div> -->
+            </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Endereço</h5>
@@ -235,9 +281,11 @@
           </div>
           <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Menu</h5>
-            <a class="btn btn-link" href="index.html">Home</a>
-            <a class="btn btn-link" href="about.html">Sobre</a>
-            <a class="btn btn-link" href="mapas.html">Mapa</a>
+            <a class="btn btn-link" href="">Sobre</a>
+            <a class="btn btn-link" href="">Contato</a>
+            <a class="btn btn-link" href="">Mapa</a>
+            <a class="btn btn-link" href="">Termos e condições</a>
+            <a class="btn btn-link" href="">Suporte</a>
           </div>
       </div>      
 
@@ -248,7 +296,7 @@
               &copy; <a href="#" style="color: #F58634">Feeling</a>, todos os direitos reservados.
             </div>
             <div class="col-md-6 text-center text-md-end">
-              Criado por <a style="color: #F58634" href="#" target="_blank">WebCodeRN</a>
+              Criado por <a style="color: #F58634" href="https://ge.globo.com/" target="_blank">WebCodeRN</a>
           </div>
       </div>
     </div>
